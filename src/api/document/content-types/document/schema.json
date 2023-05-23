@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documents",
+  "info": {
+    "singularName": "document",
+    "pluralName": "documents",
+    "displayName": "Document",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": false
+    },
+    "collector": {
+      "type": "string"
+    },
+    "documentType": {
+      "type": "string",
+      "required": true
+    },
+    "language": {
+      "type": "string",
+      "required": true
+    },
+    "yearWritten": {
+      "type": "integer",
+      "max": 3000
+    },
+    "locationWritten": {
+      "type": "string"
+    },
+    "ink": {
+      "type": "string"
+    },
+    "illumination": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "maxLength": 2000
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contributor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "documents"
+    },
+    "bookmarkBy": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "private": true,
+      "inversedBy": "bookmarks"
+    }
+  }
+}
