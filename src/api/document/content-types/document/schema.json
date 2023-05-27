@@ -75,14 +75,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
-      "private": true,
       "inversedBy": "bookmarks"
     },
     "viewedBy": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
-      "private": true,
       "inversedBy": "history"
     }
   }

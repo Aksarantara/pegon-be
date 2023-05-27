@@ -84,12 +84,14 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::document.document",
+      "private": true,
       "mappedBy": "bookmarkBy"
     },
     "history": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::document.document",
+      "private": true,
       "mappedBy": "viewedBy"
     }
   }
