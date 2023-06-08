@@ -18,10 +18,12 @@
     },
     "author": {
       "type": "string",
-      "required": false
+      "required": false,
+      "default": "Anonymous"
     },
     "collector": {
-      "type": "string"
+      "type": "string",
+      "default": "Anonymous"
     },
     "documentType": {
       "type": "string",
@@ -29,7 +31,8 @@
     },
     "language": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "Indonesian"
     },
     "yearWritten": {
       "type": "integer",
@@ -52,7 +55,7 @@
     "file": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "files"
       ]
@@ -60,7 +63,7 @@
     "thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]

@@ -9,6 +9,11 @@ Icon
 .Spotlight-V100
 .Trashes
 ._*
+meilisearch.env
+.meilisearch.token
+.token
+.env
+.curl.example
 
 
 ############################

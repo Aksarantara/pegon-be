@@ -1,0 +1,11 @@
+api.pegon.works {
+    reverse_proxy :1337
+}
+
+search.pegon.works {
+    reverse_proxy :7700
+}
+
+pegon.works {
+    reverse_proxy :3000
+}
