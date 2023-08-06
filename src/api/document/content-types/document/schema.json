@@ -85,6 +85,10 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "history"
+    },
+    "documentScript": {
+      "type": "string",
+      "required": false
     }
   }
 }
